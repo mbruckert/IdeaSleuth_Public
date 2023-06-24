@@ -1,6 +1,10 @@
 # IdeaSleuth
 
-This is Mark Bruckert and Owen Burns submission to the Pinecone Hackathon, called IdeaSleuth. The original repo was created on Monday, but we created this new one because there might have been a key or two (oops!) in the original repo and we didn't want to make that public. Anyways... we hope you enjoy the project.
+This is Mark Bruckert and Owen Burns submission to the Pinecone Hackathon, called IdeaSleuth. The original repo was created on Monday, but we created this new one because there might have been a key or two (oops!) in the original repo and we didn't want to make that public. Anyways... we hope you enjoy the project!
+
+The main code for the project can be found in main.py
+
+Additional experimentation can be found in Experimentation_Notebook_Logic.py and Experimentation_Notebook_Image.py (this contains the WIP image searching code that we mention in our submission).
 
 ## Inspiration
 
