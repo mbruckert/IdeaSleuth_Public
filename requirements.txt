@@ -1,0 +1,17 @@
+# Function dependencies, for example:
+# package==version
+google-cloud==0.34.0
+transformers==4.30.2
+Pillow==9.5.0
+langchain==0.0.208
+pinecone-client==2.2.2
+bs4==0.0.1
+reportlab==4.0.4
+openai==0.27.8
+tiktoken==0.4.0
+pydantic==1.10.9
+pypdf==3.10.0
+Flask==2.3.2
+Flask-Cors==3.0.10
+google-cloud-secret-manager==2.16.1
+google-cloud-bigquery==3.11.1

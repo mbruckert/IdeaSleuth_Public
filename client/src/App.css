@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+html, body{
+overflow-y: hidden;
+}
+
+.book {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.left-page,
+.right-page,
+.flipping-page {
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.left-page {
+  transform-origin: center right;
+}
+
+.right-page {
+  left: 100px;
+  transform-origin: center left;
+}
+
+.flipping-page {
+  left: 100px;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  animation: flip 3s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flipping-page:before {
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  background-color: white;
+  border-left: 1px solid #ccc;
+  transform: rotateY(180deg);
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+@keyframes flip {
+  0%, 20% {
+    transform: rotateY(0deg);
+  }
+  80%, 100% {
+    transform: rotateY(-180deg);
+  }
+}
+
+.ticker {
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  white-space: nowrap;
+  margin-top: -20px;
+  margin-left: -25%;
+}
+
+.rectangles {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+  margin-top: 20px;
+}
+
+.rectangle {
+  display: inline-block;
+  height: 100px;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 0px 19px 0px rgba(97, 96, 96, 0.25);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-300px - 20px)); }
+}
